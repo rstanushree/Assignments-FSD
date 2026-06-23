@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Responsive Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+        .btn1{
+            border-radius: 50px;
+            padding: 10px 40px;
+            background-color: #274154;
+            color: #FFC107;
+            margin-top: 20px;
+            font-size: 17px;
+        }
+        .btn1:hover{
+            color: white;
+            border: 2px solid white;
+        }
+        .card{
+            transition:0.3s ease;
+            border-radius:15px;
+        }
+        .card:hover{
+            transform:translateY(-8px);
+            box-shadow:0 12px 25px rgba(0,0,0,.2) !important;
+        }
+        .card img{
+            border-radius:15px 15px 0 0;
+        }
+    </style>
+    </head>
+<body>
+    <div class="bg-dark text-light text-center py-2">
+    Festive Offer: Get Up To 25% Off On Making Charges
+</div>
+<nav class="navbar navbar-expand-lg sticky-top" style="background:#274154;">
+    <div class="container-fluid px-lg-5">
+        <a class="navbar-brand text-warning ms-5 fs-3">Pavithram Jewellers</a>
+        <form class="d-flex my-3 my-lg-0 mx-lg-auto col-lg-5">
+      <input class="form-control  me-2" type="search" placeholder="What are you looking for today?" aria-label="Search"/>
+      <button class="btn btn-outline-light" type="submit">Search</button>
+    </form>
+    <ul class="navbar-nav ms-auto d-flex flex-row gap-4">
+        <li class="nav-item">
+          <a class="nav-link text-warning"  href="#jewelryCarousel">Home</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link text-warning"  href="#aboutsec">About</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link text-warning" href="#productsec">Products</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link text-warning"  href="#contact">Contact</a>
+        </li>
+      </ul>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav w-100 justify-content-between text-center">
+        <a class="nav-link active mx-5" aria-current="page" href="#two">Gold</a>
+        <a class="nav-link active mx-5" href="#one">Silver</a>
+        <a class="nav-link active mx-5" href="#one">Diamond</a>
+        <a class="nav-link active mx-5" href="#five">Bridal</a>
+        <a class="nav-link active mx-5" href="#four">Gifting</a>
+        <a class="nav-link active mx-5" href="#productsec">Collections</a>
+        <a class="nav-link active mx-5" href="#productsec">Gold scheme</a>
+        <a class="nav-link active mx-5" href="#productsec">More jewellery</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="jewelryCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#jewelryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#jewelryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#jewelryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#jewelryCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="5000">
+      <img src="https://manubhai.in/wp-content/uploads/2026/06/Fathers-Day-Banner-Mobile.jpeg" class="img-fluid w-100"  alt="Gold Jewellery">
+      <div class="carousel-caption d-none d-md-block" class="pt-lg-5 pt-3 !important;">
+        <div class="container-fluid px-lg-5 px-3">
+        <a href="#three" class="btn btn-warning btn-lg px-4 mt-2">Explore Collections</a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="https://enterprise-app-two.vercel.app/static/media/pic3.46c693006c3e7cc6ecb4.jpg" class="img-fluid w-100 " alt="Bridal Gold Jewellery">
+      <div class="carousel-caption d-none d-md-block text-start p-5"  class="pt-lg-5 pt-3 !important;">
+        <div class="container-fluid px-lg-5 px-3">
+          <span class="badge bg-warning text-dark mb-2 text-uppercase tracking-wider">The Bridal Suite</span>
+          <h1 class="display-6 display-lg-3 fw-bold text-white">Timeless Heritage</h1>
+          <p class="lead text-warning-50">Exquisite hand-crafted masterpieces designed for your unforgettable moments.</p>
+          <a href="#five" class="btn btn-warning btn-lg px-4 mt-2">Explore Our Antique Gold Collections</a>
+      </div>
+    </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="https://www.caratlane.com/blog/wp-content/uploads/2023/01/Stopmotion.gif" class="img-fluid w-100"  alt="Kids Jewellery">
+      <div class="carousel-caption d-none d-md-block text-start p-5"  class="pt-lg-5 pt-3 !important;">
+        <h1 class="display-6 display-lg-3 fw-bold text-white">Little Jewels for Little Stars</h1>
+        <p>From birthdays to naming ceremonies, find jewellery as special as your little one</p>
+        <a href="#productsec" class="btn btn-warning btn-lg px-4 mt-2">Explore Little Luxuries  </a>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="https://img.magnific.com/free-photo/luxury-jewellery-display_23-2151921930.jpg?semt=ais_hybrid&w=740&q=80" class="img-fluid w-100" alt="Diamond Rings">
+      <div class="carousel-caption d-none d-md-block text-start p-5"  class="pt-lg-5 pt-3 !important;">
+        <div class="container-fluid px-lg-5 px-3">
+          <span class="badge bg-light text-dark mb-2 text-uppercase">Luxury Gifting</span>
+          <h1 class="display-6 display-lg-3 fw-bold text-white">Brilliance In Every Cut</h1>
+          <p class="lead text-dark-50">Discover pure diamond settings created to catch light from every angle.</p>
+          <a href="#productsec" class="btn btn-outline-light btn-lg px-4 mt-2">Shop Diamonds</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#jewelryCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#jewelryCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<section id="aboutsec" class="py-5">
+<div class="container-fluid px-lg-5 px-3">
+    <div class="row align-items-center">
+            <div class="col-lg-5 text-center mb-4 mb-lg-0">
+    <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEcwR1Pnee299RSDc_8Xoo7KcgO2NXBUxirbnBdKq4udIQZPBaXENq5CF2xHa9WU0qfxERd8lddVDZGR1Lc0B2IFGXgvpqrWpECZqmImxmMT0jL7xGbYBRsdErYUr6OoDJkbFA=s1360-w1360-h1020-rw" alt="Pavithram Jewellers" class="img-fluid rounded shadow w-100" style="height:500px; object-fit:cover; object-position:center 30%;"
+/>
+        </div>
+        <div class="col-sm-12 col-lg-7">
+            <div class="margin-about">
+                <h2 class="pt-lg-5 pt-3">At Pavithram Jewellers,</h2>
+                <p>With a passion for timeless beauty, we bring together exquisite gold,
+                    dazzling diamonds, elegant silver, and handcrafted bridal collections
+                    designed to celebrate life's most cherished moments.</p>
+                    <P>Jewellery is more than an ornament—it's a symbol of love, tradition, and unforgettable memories. At Pavithram Jewellers, we blend timeless craftsmanship with contemporary elegance to create masterpieces that celebrate every milestone. From exquisite bridal collections to modern everyday designs, every creation reflects our commitment to purity, quality, and exceptional artistry."</P>
+                <button type="button" class="btn1 btn-success">Click for more...</button>
+            </div>
+        </div>
+    </div>
+ </div>
+ </section>
+
+<section id="featuresec" class="pt-5 pb-1">
+    <div class="container py-5">
+        <h2 class="text-center mb-5">Shop By Category</h2>
+        <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPj5SoABYS6dfFYF9BIxymYzK7G1u2jMC1UtfXb2sLVjlOyMkaT7t-Xv0&s=10"
+                         class="card-img-top" alt="Not found">
+                        <h6 class="mt-2">Earrings</h6>
+                        <a href="#one" class="btn btn-outline-dark">Shop now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                    <img src="https://i.pinimg.com/736x/66/dd/43/66dd43fb1c70243e37bf86757fc2d54b.jpg"
+                         class="card-img-top" alt="Not found">
+                        <h6 class="mt-2">Statement necklaces</h6>
+                        <a href="#five" class="btn btn-outline-dark">Shop now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                    <img src="https://www.sarlyn.com/wp-content/uploads/2025/08/Moissanite-Oval-Cut-Three-Side-Stone-Engagement-Gold-Ring-Sarlyn-3-450x450.webp"
+                         class="card-img-top" alt="Not found">
+                        <h6 class="mt-2">Signature rings</h6>
+                        <a href="#four" class="btn btn-outline-dark">Shop now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="card  h-100 text-center shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                    <img src="https://jainajeweller.com/wp-content/uploads/2025/01/JJ-March-Grid-of-18_10.jpg"
+                         class="card-img-top" alt="Not found">
+                        <h6 class="mt-2">Antique bangles</h6>
+                        <a href="#two" class="btn btn-outline-dark">Shop now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                    <img src="https://www.niluscollection.com/cdn/shop/files/ChatGPT_Image_May_30_2026_04_43_16_PM.png?v=1780300793&width=800"
+                         class="card-img-top" alt="Not found">
+                        <h6 class="mt-2">Subtle bracelets</h6>
+                        <a href="#four" class="btn btn-outline-dark">Shop now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                    <img src="https://iyalsilvers.com/cdn/shop/files/8.1_373a0b52-45af-4481-96f7-c0486a5eb54a.jpg?v=1761888334&width=3000"
+                         class="card-img-top" alt="Not found">
+                        <h6 class="mt-2">Kids Jewellery</h6>
+                        <a href="#one" class="btn btn-outline-dark">Shop now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+    
+<section class="pt-2" id="productsec">
+    <div class="container py-5">
+        <div class="row py-5">
+            <div class="col">
+         <h1 class="text-center mb-5"> Featured Collection</h1>
+<p class="text-center">"A curated collection of timeless designs, crafted to make every occasion unforgettable"</p>
+            </div>
+            <div class="col-sm-12 text-center">
+   <div class="d-flex flex-wrap justify-content-center gap-2">
+  <a href="#one" class="btn btn-warning">Diamond Jewellery</a>
+  <a href="#two" class="btn btn-warning">Bridal Bangles</a>
+  <a href="#three" class="btn btn-warning">Mens Jewellery</a>
+  <a href="#four" class="btn btn-warning">Modern Jewellery</a>
+  <a href="#five" class="btn btn-warning">Temple Jewellery</a>
+</div>
+    </div>
+    </div>
+    <div class="row" id="one">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 text-center">
+<div class="card border-0 bg-light">
+  <div class="card-body" >
+     <img src="https://s7ap1.scene7.com/is/image/malabargroup/mgdsite/products/permanent/india/diamond%20ornaments/tanmaniya/TM-008596/TMGEN11535-0011/TMGEN11535-0011-1.Jpg?fmt=webp-alpha&wid=400&hei=400" class="card-img-top img-fluid" alt="Not found">
+  </div>
+  <h6>Diamond studded neckpiece</h6>
+  <p>₹ 53,926</p>
+  <a href="#" class="btn btn-warning">Buy Now</a>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 text-center">
+<div class="card border-0 bg-light">
+  <div class="card-body">
+     <img src="https://s7ap1.scene7.com/is/image/malabargroup/mgdsite/products/permanent/india/diamond%20ornaments/nose%20pin/NP-031785/NPGEN10315-0026/NPGEN10315-0026-1.jpg?fmt=webp-alpha&wid=400&hei=400" class="card-img-top img-fluid" alt="Not found">
+  </div>
+  <h6>Diamond rhodium polish nosepin</h6>
+  <p>₹ 10,036</p>
+  <a href="#" class="btn btn-warning">Buy Now</a>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 text-center">
+<div class="card border-0 bg-light">
+  <div class="card-body">
+     <img src="https://s7ap1.scene7.com/is/image/malabargroup/mgdsite/products/permanent/india/diamond%20ornaments/pendant/PD-209355/PDGEN11160-0015/PDGEN11160-0015-1.Jpg?fmt=webp-alpha&wid=400&hei=400" class="card-img-top img-fluid" alt="Not found">
+  </div>
+  <h6>Queenly diamond pendant</h6>
+  <p>₹ 14,851 </p>
+  <a href="#" class="btn btn-warning">Buy Now</a>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 text-center">
+<div class="card border-0 bg-light">
+  <div class="card-body">
+     <img src="https://s7ap1.scene7.com/is/image/malabargroup/mgdsite/products/permanent/india/diamond%20ornaments/finger%20ring/FR-041363/FRZOL10011-0021/FRZOL10011-0021-1.jpg?fmt=webp-alpha&wid=400&hei=400" class="card-img-top img-fluid" alt="Not found">
+  </div>
+  <h6>Geometrical Classic Ring With Diamonds</h6>
+  <p>₹ 19,365</p>
+  <a href="#" class="btn btn-warning">Buy Now</a>
+</div>
+</div>
+</div>
+<div class="row" id="two">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 text-center">
+    <div class="card border-0 bg-light">
+    <div class="card-body">
+    <img src="https://s7ap1.scene7.com/is/image/malabargroup/mgdsite/products/permanent/india/gold%20ornaments/bangle/BN-342150/BNNGS41865-0001/BNNGS41865-0001-2.jpg?fmt=webp-alpha&wid=400&hei=400" class="card-img-top img-fluid" alt="Not found">
+    </div>
+    <h6>Ruby Hammered Divine Gold Bangle</h6>
+    <p>₹ 4,72,833</p>
+    <a href="#" class="btn btn-warning">Buy Now</a>
+    </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 text-center">
+    <div class="card border-0 bg-light">
+    <div class="card-body">
+    <img src="https://s7ap1.scene7.com/is/image/malabargroup/mgdsite/products/permanent/india/GOLD%20ORNAMENTS/BANGLE/BN-429266/NPI-94-2025-1159-1/NPI-94-2025-1159-1-1.png?fmt=webp-alpha&wid=400&hei=400" class="card-img-top img-fluid" alt="Not found">
+    </div>
+    <h6>Peacock Broad Gold Bangle</h6>
+    <p>₹ 11,29,736</p>
+    <a href="#" class="btn btn-warning">Buy Now</a>
+    </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 text-center">
+    <div class="card border-0 bg-light">
+    <div class="card-body">
+    <img src="https://s7ap1.scene7.com/is/image/malabargroup/mgdsite/products/permanent/india/gold%20ornaments/bangle/BN-453872/NPI-94-2025-1764-1/NPI-94-2025-1764-1-1.png?fmt=webp-alpha&wid=400&hei=400" class="card-img-top img-fluid" alt="Not found">
+    </div>
+    <h6>Contemporary Noble Generic Kada</h6>
+    <p>₹ 4,95,936</p>
+    <a href="#" class="btn btn-warning">Buy Now</a>
+    </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 text-center">
+    <div class="card border-0 bg-light">
+    <div class="card-body">
+    <img src="https://s7ap1.scene7.com/is/image/malabargroup/mgdsite/products/permanent/india/gold%20ornaments/bangle/BN-342840/BNNOB43454-0001/BNNOB43454-0001-1.jpg?fmt=webp-alpha&wid=400&hei=400" class="card-img-top img-fluid" alt="Not found">
+    </div>
+    <h6>Extravagant Gold Bangle</h6>
+    <p>₹ 4,78,329</p>
+    <a href="#" class="btn btn-warning">Buy Now</a>
+    </div>
+    </div>
+    </div>
+    <div class="row" id="three">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 text-center">
+    <div class="card border-0 bg-light">
+    <div class="card-body">
+    <img src="https://s7ap1.scene7.com/is/image/malabargroup/mgdsite/products/permanent/india/gold%20ornaments/bracelet/BR-001754/BRNOB11521-0001/BRNOB11521-0001-1.Jpg?fmt=webp-alpha&wid=400&hei=400" class="card-img-top img-fluid" alt="Not found">
+    </div>
+    <h6>Striking Gold Nawabi Bracelet For Men</h6>
+    <p>₹ 2,55,100</p>
+    <a href="#" class="btn btn-warning">Buy Now</a>
+    </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 text-center">
+    <div class="card border-0 bg-light">
+    <div class="card-body">
+    <img src="https://s7ap1.scene7.com/is/image/malabargroup/mgdsite/products/permanent/india/gold%20ornaments/finger%20ring/FR-017111/FRDZL47820-0001/FRDZL47820-0001-1.JPG?fmt=webp-alpha&wid=400&hei=400" class="card-img-top img-fluid" alt="Not found">
+    </div>
+    <h6>Cherished Glossy Gold Ring For Men</h6>
+    <p>₹ 35,321</p>
+    <a href="#" class="btn btn-warning">Buy Now</a>
+    </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 text-center">
+    <div class="card border-0 bg-light">
+    <div class="card-body">
+    <img src="https://s7ap1.scene7.com/is/image/malabargroup/mgdsite/products/permanent/india/gold%20ornaments/chain/CH-012345/CHZNS40242-0001/CHZNS40242-0001-1.JPG?fmt=webp-alpha&wid=400&hei=400" class="card-img-top img-fluid" alt="Not found">
+    </div>
+    <h6>Eye-catching Indo-Italian Chain </h6>
+    <p>₹ 3,31,201</p>
+    <a href="#" class="btn btn-warning">Buy Now</a>
+    </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 text-center">
+    <div class="card border-0 bg-light">
+    <div class="card-body">
+    <img src="https://s7ap1.scene7.com/is/image/malabargroup/mgdsite/products/permanent/india/gold%20ornaments/pendant/PD-320896/PDDZL42255-0001/PDDZL42255-0001-1.jpg?fmt=webp-alpha&wid=400&hei=400" class="card-img-top img-fluid" alt="Not found">
+    </div>
+    <h6>Prima Gold Pendant </h6>
+    <p>₹ 89,699</p>
+    <a href="#" class="btn btn-warning">Buy Now</a>
+    </div>
+    </div>
+    </div>
+    <div class="row" id="four">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 text-center">
+    <div class="card border-0 bg-light">
+    <div class="card-body">
+    <img src="https://s7ap1.scene7.com/is/image/malabargroup/mgdsite/products/permanent/india/gold%20ornaments/finger%20ring/FR-321923/FRDZL48369-0032/FRDZL48369-0032-1.jpg?fmt=webp-alpha&wid=400&hei=400" class="card-img-top img-fluid" alt="Not found">
+    </div>
+    <h6>Orange Prized Generic Gold Finger Ring</h6>
+    <p>₹ 30,944 </p>
+    <a href="#" class="btn btn-warning">Buy Now</a>
+    </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 text-center">
+    <div class="card border-0 bg-light">
+    <div class="card-body">
+    <img src="https://s7ap1.scene7.com/is/image/malabargroup/mgdsite/products/permanent/india/gold%20ornaments/bangle/BN-027734/BNDZL11039-0001/BNDZL11039-0001-1.Jpg?fmt=webp-alpha&wid=400&hei=400" class="card-img-top img-fluid" alt="Not found">
+    </div>
+    <h6>Opulent Vivid Zoul Gold Bangle</h6>
+    <p>₹ 45,721 </p>
+    <a href="#" class="btn btn-warning">Buy Now</a>
+    </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 text-center">
+    <div class="card border-0 bg-light">
+    <div class="card-body">
+    <img src="https://s7ap1.scene7.com/is/image/malabargroup/mgdsite/products/permanent/india/gold%20ornaments/bangle/BN-112486/BNDZL10012-3/BNDZL10012-3-1.jpg?fmt=webp-alpha&wid=400&hei=400" class="card-img-top img-fluid" alt="Not found">
+    </div>
+    <h6>Cutesy Gold Bangle</h6>
+    <p>₹ 50,159 </p>
+    <a href="#" class="btn btn-warning">Buy Now</a>
+    </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 text-center">
+    <div class="card border-0 bg-light">
+    <div class="card-body">
+    <img src="https://s7ap1.scene7.com/is/image/malabargroup/mgdsite/products/permanent/india/gold%20ornaments/earrings/ER-120221/ERDZL15124-0001/ERDZL15124-0001-1.jpg?fmt=webp-alpha&wid=400&hei=400" class="card-img-top img-fluid" alt="Not found">
+    </div>
+    <h6>Circular Pattern Gold Studs</h6>
+    <p>₹ 25,891  </p>
+    <a href="#" class="btn btn-warning">Buy Now</a>
+    </div>
+    </div>
+    </div>
+    <div class="row" id="five">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 text-center">
+    <div class="card border-0 bg-light">
+    <div class="card-body">
+    <img src="https://cdn.joyalukkas.in/media/catalog/product/d/s/ds1400104748.jpg?tr=w-360" class="card-img-top img-fluid" alt="Not found">
+    </div>
+    <h6>Temple Gold Necklac</h6>
+    <p>₹ 2,474,000 </p>
+    <a href="#" class="btn btn-warning">Buy Now</a>
+    </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 text-center">
+    <div class="card border-0 bg-light">
+    <div class="card-body"> 
+    <img src="https://cdn.joyalukkas.in/media/catalog/product/c/n/cn1400078791_1.jpg?tr=w-360" class="card-img-top img-fluid" alt="Not found">
+    </div>
+    <h6>Brindavan Symphony Gold Necklace</h6>
+    <p>₹ 4,730,000 </p>
+    <a href="#" class="btn btn-warning">Buy Now</a>
+    </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 text-center">
+    <div class="card border-0 bg-light">
+    <div class="card-body">
+    <img src="https://www.kushals.com/cdn/shop/files/temple-necklace-ruby-green-oxidised-gold-silver-temple-necklace-177131-40714738565276.jpg?v=1737524258&width=1080" class="card-img-top img-fluid" alt="Not found">
+    </div>
+    <h6>Temple Necklace</h6>
+    <p>₹ 4,750,325 </p>
+    <a href="#" class="btn btn-warning">Buy Now</a>
+    </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 text-center">
+    <div class="card border-0 bg-light">
+    <div class="card-body">
+    <img src="https://media.grtjewels.com/catalog/product/cache/529b66f1f87de88553487754ab9e4dd4/2/6/264a063625_prop_1.jpg" class="card-img-top img-fluid" alt="Not found">
+    </div>
+    <h6>Temple Jhumka</h6>
+    <p>₹ 1,17,679  </p>
+    <a href="#" class="btn btn-warning">Buy Now</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+<section class="bg-warning py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold">
+            Flat 30% OFF on Wedding Collections
+        </h2>
+        <p class="lead">
+            Limited Period Offer
+        </p>
+        <button class="btn btn-dark btn-lg">
+            Grab Offer
+        </button>
+    </div>
+</section>
+
+<section class="py-5 bg-light">
+    <div class="container-fluid px-lg-5 px-3">
+        <h2 class="text-center mb-5 fw-bold">
+            Customer Reviews
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow border-0">
+                    <div class="card-body text-center">
+                        <h4>⭐⭐⭐⭐⭐</h4>
+                        <p>Their traditional gold collection is breathtaking. Every design reflects elegance and timeless beauty. A wonderful shopping experience.</p>
+                        <h6>Meera</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow border-0">
+                    <div class="card-body text-center">
+                        <h4>⭐⭐⭐⭐⭐</h4>
+                        <p>Amazing diamond jewellery and outstanding customer service.
+                        Highly recommended!</p>
+                        <h6>Ananya</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow border-0">
+                    <div class="card-body text-center">
+                        <h4>⭐⭐⭐⭐⭐</h4>
+                        <p>Elegant jewellery at affordable prices.</p>
+                        <h6>Sneka</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white py-5" id="contact">
+   <div class="container-fluid px-lg-5 px-3">
+        <div class="row">
+            <div class="col-12 col-md-4 text-center text-md-start mb-4">
+                <h5>Pavithram Jewellers</h5>
+                <p>Crafting timeless elegance</p>
+            </div>
+            <div class="col-12 col-md-4 text-center text-md-start mb-4">
+                <h5 class="text-warning">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li class="list-unstyled">
+                     <a class="text-white text-decoration-none" aria-current="page" href="#aboutsec">About us</a>
+                    </li>
+                    <li class="list-unstyled">
+                        <a class="text-white text-decoration-none" aria-current="page" href="#productsec">Collections</a>
+                        </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 text-center text-md-start mb-4">
+                <h5 class="text-warning">Get in touch</h5>
+                <p>
+                    📍  11/25 V R K Towers, Kovilmedu Pirivu, Thadagam main road,
+                    (opp) Police Check Post, Coimbatore -641025. 
+                    </p>
+                    <h5 class="text-warning">Call us at:</h5>
+                     <p> 📞 +91-91507 20409 / +91- 89253 39996
+                </p>
+            </div>
+            </div>
+        <div class="bg-dark text-white py-4 mt-5">
+        <div class="col-md-6 text-center text-md-start">
+        <p class="mb-0">
+             &copy; 2026 Pavithram Jewellers. All Rights Reserved.
+        </p>     
+    </div>
+    </div>
+    </div>
+</footer>   
+</body>
+</html>
